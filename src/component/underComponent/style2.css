@@ -1,0 +1,91 @@
+.star {
+  width: 24px;
+  height: 24px;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  text-transform: lowercase;
+}
+.category {
+  margin: 0 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 80px;
+  font-size: 1em;
+  padding: 0px;
+  /* background-color: blue; */
+}
+
+.category img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0px;
+}
+.category a {
+  text-decoration: none;
+  color: #000;
+}
+@media screen and (max-width: 900px) {
+  .category {
+    padding: 0;
+    margin: 0px;
+    height: 92px;
+    width: 70px;
+    font-size: 0.8em;
+  }
+  .category img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .category {
+    padding: 0;
+    margin-left: 15px;
+    height: 82px;
+    width: 60px;
+    font-size: 0.6em;
+  }
+  .category img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+.search {
+  width: 500px;
+}
+@media screen and (max-width: 600px) {
+  .search {
+    width: 99%;
+    margin: auto;
+  }
+}
+.totopoffer {
+  flex-direction: column;
+  width: 180px;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../image/bgimg.png");
+  background-position: center;
+  background-size: cover;
+  margin: 5px;
+}
+.cardTop {
+  border: 1px solid red;
+  flex-direction: column;
+  max-width: 180px;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
