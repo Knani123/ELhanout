@@ -2,9 +2,9 @@ import React from "react";
 import CardTop from "./underComponent/CardTop";
 import "./style.css";
 import { Divider, Link } from "@mui/material";
-import Packge from "./underComponent/Packge";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
-const NewProduct = ({ color, titre }) => {
+
+const Libre = ({ color, titre }) => {
   return (
     <div style={{ width: "100%", backgroundColor: color, margin: "4px 0px" }}>
       <div
@@ -28,10 +28,21 @@ const NewProduct = ({ color, titre }) => {
           Voir plus
           <DoubleArrowIcon />
         </Link>
-      </div>{" "}
+      </div>
       <Divider />
       <div className="NewProduct">
-        <Packge />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
+        <CardTop />
         <CardTop />
         <CardTop />
         <CardTop />
@@ -41,4 +52,4 @@ const NewProduct = ({ color, titre }) => {
   );
 };
 
-export default NewProduct;
+export default Libre;
