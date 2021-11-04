@@ -74,3 +74,17 @@
     align-items: center;
   }
 }
+
+.tayara {
+  background-color: red;
+  animation: example 2s infinite;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}

@@ -32,6 +32,7 @@ const Home = () => {
       <PubHome image="http://img.over-blog-kiwi.com/0/63/78/80/201307/ob_a62b66_publicite-commerce-spam-kotoyamagami-fotolia-com.jpg" />
       <Libre color="rgba(45,85,215,0.7)" titre="Libre" />
       <Tayara />
+      <PubHome image="http://img.over-blog-kiwi.com/0/63/78/80/201307/ob_a62b66_publicite-commerce-spam-kotoyamagami-fotolia-com.jpg" />
       <Footer />
     </div>
   );
