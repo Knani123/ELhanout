@@ -80,7 +80,6 @@
   margin: 5px;
 }
 .cardTop {
-  border: 1px solid red;
   flex-direction: column;
   max-width: 180px;
   max-height: 200px;

@@ -4,24 +4,30 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-
-const CardTop = () => {
+import { useHistory } from "react-router-dom";
+const CardTop = ({ produit }) => {
+  let history = useHistory();
+  let { titre, discrip, image, id } = produit;
+  produit && ({ titre, discrip, image } = produit);
   return (
     <div>
-      <Card sx={{ width: 160, margin: 1 }}>
+      <Card
+        sx={{ width: 160, margin: 1 }}
+        onClick={() => history.push(`/Product/${id}`)}
+      >
         <CardActionArea>
           <CardMedia
             component="img"
             height="130"
-            image="https://th.bing.com/th/id/OIP.IN6vAl_RTNnxOD7pp3vpEwHaEK?w=298&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+            image={image}
             alt="green iguana"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
+            <Typography gutterBottom variant="OVERLINE " component="div">
+              {titre}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread
+            <Typography variant="caption " color="text.secondary">
+              {discrip}
             </Typography>
           </CardContent>
         </CardActionArea>

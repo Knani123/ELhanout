@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 const PubHome = ({ image }) => {
   console.log(image);
@@ -7,11 +8,10 @@ const PubHome = ({ image }) => {
       className="sous-bar"
       style={{
         height: "100px",
-        border: "1px solid green",
-        overflow: "hidden",
+        // overflow: "hidden",
       }}
     >
-      <img src={image} alt="" />
+      <h1></h1>
     </div>
   );
 };

@@ -9,10 +9,11 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import AddReactionIcon from "@mui/icons-material/AddReaction";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import IconButton from "@mui/material/IconButton";
-
 import "./style.css";
 import logo from "../image/logo.png";
+import { useHistory } from "react-router-dom";
 const Bar = () => {
+  let history = useHistory();
   return (
     <>
       <CssBaseline />
@@ -26,7 +27,12 @@ const Bar = () => {
           <Hidden mdDown>
             <div className="block"></div>
           </Hidden>
-          <img className="img" src={logo} alt="logo" />
+          <img
+            className="img"
+            src={logo}
+            alt="logo"
+            onClick={() => history.push("/")}
+          />
           <Hidden smUp>
             <div className="div">
               <Hidden smDown>
@@ -39,7 +45,7 @@ const Bar = () => {
                 <AddReactionIcon />
               </IconButton>
               <IconButton>
-                <Badge badgeContent={4} color="primary">
+                <Badge badgeContent={4} color="secondary">
                   <AddShoppingCartIcon />
                 </Badge>
               </IconButton>
@@ -53,6 +59,7 @@ const Bar = () => {
                 className="btn"
                 variant="contained"
                 endIcon={<LockOpenIcon />}
+                onClick={() => history.push("/product")}
               >
                 Login
               </Button>

@@ -4,7 +4,7 @@ import "./style.css";
 import { Divider, Link } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 
-const Libre = ({ color, titre }) => {
+const Libre = ({ color, titre, Produits }) => {
   return (
     <div style={{ width: "100%", backgroundColor: color, margin: "4px 0px" }}>
       <div
@@ -31,22 +31,12 @@ const Libre = ({ color, titre }) => {
       </div>
       <Divider />
       <div className="NewProduct">
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
-        <CardTop />
+        {Produits.map((el) => (
+          <CardTop produit={el} />
+        ))}
+        {Produits.map((el) => (
+          <CardTop produit={el} />
+        ))}
       </div>
     </div>
   );
