@@ -6,7 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Hidden, Button, Badge } from "@mui/material";
 import Search from "./underComponent/Search";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import AddReactionIcon from "@mui/icons-material/AddReaction";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import IconButton from "@mui/material/IconButton";
 import "./style.css";
@@ -38,11 +38,11 @@ const Bar = () => {
               <Hidden smDown>
                 <Search className="search" />
               </Hidden>
-              <IconButton>
+              <IconButton onClick={() => history.push("/Login")}>
                 <LockOpenIcon />
               </IconButton>
               <IconButton>
-                <AddReactionIcon />
+                <FavoriteIcon />
               </IconButton>
               <IconButton>
                 <Badge badgeContent={4} color="secondary">
@@ -59,16 +59,16 @@ const Bar = () => {
                 className="btn"
                 variant="contained"
                 endIcon={<LockOpenIcon />}
-                onClick={() => history.push("/product")}
+                onClick={() => history.push("/Login")}
               >
                 Login
               </Button>
               <Button
                 className="btn"
                 variant="contained"
-                endIcon={<AddReactionIcon />}
+                endIcon={<FavoriteIcon />}
               >
-                Plus
+                Favorite
               </Button>
               <Button
                 className="btn"

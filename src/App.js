@@ -7,6 +7,7 @@ import OneProduct from "./OneProduct";
 import Bar from "./component/Bar";
 import "./index.css";
 import Footer from "./component/Footer";
+import Login from "./Login";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/Product" component={Product} />
         <Route exact path="/Product/:id" component={OneProduct} />
+        <Route exact path="/Login" component={Login} />
         <Route component={PageErr} />
       </Switch>
       <Footer />

@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React from "react";
 import "./style.css";
 
@@ -11,7 +12,7 @@ const PubHome = ({ image }) => {
         // overflow: "hidden",
       }}
     >
-      <h1></h1>
+      <Typography variant="h1">PUB</Typography>
     </div>
   );
 };
