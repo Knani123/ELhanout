@@ -41,7 +41,7 @@ const Bar = () => {
               <IconButton onClick={() => history.push("/Login")}>
                 <LockOpenIcon />
               </IconButton>
-              <IconButton>
+              <IconButton onClick={() => history.push("/Favorites")}>
                 <FavoriteIcon />
               </IconButton>
               <IconButton>
@@ -67,6 +67,7 @@ const Bar = () => {
                 className="btn"
                 variant="contained"
                 endIcon={<FavoriteIcon />}
+                onClick={() => history.push("/Favorites")}
               >
                 Favorite
               </Button>

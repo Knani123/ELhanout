@@ -38,8 +38,8 @@ const Footer = () => {
       </div>
       <Typography align="center" sx={{ color: "white" }}>
         Fait avec <span style={{ color: "red" }}>&hearts;</span> à Tunis.
-        Copyright <span style={{ fontStyle: "italic" }}>ELHanout</span>
-        <span>{new Date().getFullYear()}</span>
+        Copyright <span style={{ fontStyle: "italic" }}>ELHanout </span>
+        <span>{new Date().getFullYear()} </span>
         Tous droits réservés
       </Typography>
     </div>
