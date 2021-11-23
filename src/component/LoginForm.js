@@ -1,8 +1,10 @@
 import { Chip, Divider, Fab, Link, TextField, Typography } from "@mui/material";
-import { height } from "@mui/system";
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 const LoginForm = () => {
+  const history = useHistory();
+
   return (
     <div
       style={{
@@ -47,6 +49,7 @@ const LoginForm = () => {
         color="primary"
         label="Créer un compte"
         sx={{ cursor: "pointer", margin: "5px  " }}
+        onClick={() => history.push("/SignUp")}
       />
     </div>
   );

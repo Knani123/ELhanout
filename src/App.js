@@ -9,6 +9,8 @@ import "./index.css";
 import Footer from "./component/Footer";
 import Login from "./Login";
 import Favorites from "./Favorites";
+import PageConf from "./PageConf";
+import SignUp from "./SignUp";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route exact path="/Product/:id" component={OneProduct} />
         <Route exact path="/Login" component={Login} />
         <Route exact path="/Favorites" component={Favorites} />
+        <Route exact path="/PageConf" component={PageConf} />
+        <Route exact path="/SignUp" component={SignUp} />
         <Route component={PageErr} />
       </Switch>
       <Footer />
