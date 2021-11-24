@@ -11,6 +11,8 @@ import Login from "./Login";
 import Favorites from "./Favorites";
 import PageConf from "./PageConf";
 import SignUp from "./SignUp";
+import Pswforget from "./Pswforget";
+import AddProduct from "./AddProduct";
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
         <Route exact path="/Favorites" component={Favorites} />
         <Route exact path="/PageConf" component={PageConf} />
         <Route exact path="/SignUp" component={SignUp} />
+        <Route exact path="/Pswforget" component={Pswforget} />
+        <Route exact path="/AddProduct" component={AddProduct} />
         <Route component={PageErr} />
       </Switch>
       <Footer />

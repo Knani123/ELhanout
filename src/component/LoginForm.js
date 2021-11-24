@@ -26,7 +26,9 @@ const LoginForm = () => {
         variant="outlined"
         sx={{ width: "100%", height: "82px" }}
       />
-      <Link href="#">Vous avez oublié votre mot de passe ?</Link>
+      <Link onClick={() => history.push("/Pswforget")}>
+        Vous avez oublié votre mot de passe ?
+      </Link>
       <Chip
         color="success"
         label="Connexion"
