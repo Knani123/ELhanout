@@ -5,7 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Hidden, Button, Badge } from "@mui/material";
 import Search from "./underComponent/Search";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import IconButton from "@mui/material/IconButton";
@@ -42,12 +42,12 @@ const Bar = () => {
                 <LockOpenIcon />
               </IconButton>
               <IconButton onClick={() => history.push("/Favorites")}>
-                <FavoriteIcon />
+                <Badge badgeContent={4} color="error">
+                  <FavoriteIcon />
+                </Badge>{" "}
               </IconButton>
-              <IconButton>
-                <Badge badgeContent={4} color="secondary">
-                  <AddShoppingCartIcon />
-                </Badge>
+              <IconButton onClick={() => history.push("/AddProduct")}>
+                <AddCircleOutlineIcon />
               </IconButton>
             </div>
           </Hidden>
@@ -66,21 +66,22 @@ const Bar = () => {
               <Button
                 className="btn"
                 variant="contained"
-                endIcon={<FavoriteIcon />}
+                endIcon={
+                  <Badge badgeContent={4} color="error">
+                    <FavoriteIcon />
+                  </Badge>
+                }
                 onClick={() => history.push("/Favorites")}
               >
-                Favorite
+                Liste
               </Button>
               <Button
                 className="btn"
                 variant="contained"
-                endIcon={
-                  <Badge badgeContent={4} color="primary">
-                    <AddShoppingCartIcon />
-                  </Badge>
-                }
+                endIcon={<AddCircleOutlineIcon />}
+                onClick={() => history.push("/AddProduct")}
               >
-                Panier
+                Ajouter
               </Button>
             </div>
           </Hidden>

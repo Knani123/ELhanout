@@ -13,6 +13,7 @@ import PageConf from "./PageConf";
 import SignUp from "./SignUp";
 import Pswforget from "./Pswforget";
 import AddProduct from "./AddProduct";
+import Profil from "./Profil";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route exact path="/SignUp" component={SignUp} />
         <Route exact path="/Pswforget" component={Pswforget} />
         <Route exact path="/AddProduct" component={AddProduct} />
+        <Route exact path="/Profil" component={Profil} />
         <Route component={PageErr} />
       </Switch>
       <Footer />
